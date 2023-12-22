@@ -14,12 +14,16 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       fontFamily: {
-        helvetica: ['var(--font-helvetica)']
+        helvetica: ['var(--font-helvetica)'],
+        natoSansRegular: ['var(--font-natoSans-regular)'],
       },
       screens: {
         'xs': '375px',
         'md': '768px',
       },
+      colors: {
+        'purple-50': '#6138f5'
+      }
     },
   },
   plugins: [],

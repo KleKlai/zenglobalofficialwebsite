@@ -10,3 +10,14 @@ export const helvetica = localFont({
     ],
     variable: '--font-helvetica'
 })
+
+export const notoSans = localFont({
+    src: [
+        {
+            path: '../../public/fonts/Nato_Sans_JP/static/NotoSansJP-Regular.ttf',
+            weight: '400',
+            style: 'normal'
+        }
+    ],
+    variable: '--font-natoSans-regular'
+})
