@@ -131,9 +131,8 @@ export default function Footer() {
               <ul className="space-y-2">
                 {abouts.map((about) => {
                   return (
-                    <li>
+                    <li key={about.name}>
                       <Link
-                        key={about.name}
                         href={about.href}
                         className=""
                       >
@@ -152,9 +151,8 @@ export default function Footer() {
               <ul className="space-y-2">
                 {services.map((service) => {
                   return (
-                    <li>
+                    <li key={service.name}>
                       <Link
-                        key={service.name}
                         href={service.href}
                         className=""
                       >
@@ -170,13 +168,11 @@ export default function Footer() {
               <h3 className="mb-5 text-base font-semibold font-natoSansRegular">
                 Policies
               </h3>
-              {/* Add your links here */}
               <ul className="space-y-2 text-wrap">
                 {policies.map((policy) => {
                   return (
-                    <li>
+                    <li key={policy.name}>
                       <Link
-                        key={policy.name}
                         href={policy.href}
                         className=""
                       >
@@ -194,7 +190,7 @@ export default function Footer() {
           &copy; 2023 Zenglobal
         </p>
 
-        <ul className="flex flex-wrap items-center justify-center text-gray-900 dark:text-white py-6 space-x-6">
+        {/* <ul className="flex flex-wrap items-center justify-center text-gray-900 dark:text-white py-6 space-x-6">
           <li className="hidden lg:block">
             <p className="me-4 text-sm text-gray-300 font-natoSansRegular font-regular">
               &copy; 2023 Zenglobal
@@ -218,7 +214,7 @@ export default function Footer() {
               </li>
             );
           })}
-        </ul>
+        </ul> */}
       </footer>
     </div>
   );
