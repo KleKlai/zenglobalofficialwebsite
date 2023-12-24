@@ -39,19 +39,15 @@ const links = [
 
 const abouts = [
   {
-    name: "About Comcast",
+    name: "About Oro Dragon",
     href: "",
   },
   {
-    name: "Comcast Business",
+    name: "Oro Dragon Business",
     href: "",
   },
   {
     name: "Careers",
-    href: "",
-  },
-  {
-    name: "Press Room",
     href: "",
   },
   {
@@ -62,10 +58,6 @@ const abouts = [
     name: "Advertise with Us",
     href: "",
   },
-  {
-    name: "Sitemap",
-    href: "",
-  },
 ];
 
 const services = [
@@ -74,19 +66,11 @@ const services = [
     href: "",
   },
   {
-    name: "Xfinity Stream",
-    href: "",
-  },
-  {
-    name: "Discover Xfinity",
+    name: "Discover Zenglobal",
     href: "",
   },
   {
     name: "Run Internet Speed Test",
-    href: "",
-  },
-  {
-    name: "Find Xfinity Stores",
     href: "",
   },
   {
@@ -98,13 +82,13 @@ const services = [
     href: "",
   },
   {
-    name: "NOW TV",
+    name: "ZENWiFi",
     href: "",
   },
   {
-    name: "NOW Wifi",
-    href: "",
-  },
+    name: "Secure my Home | Business",
+    href: ""
+  }
 ];
 
 const policies = [
@@ -121,7 +105,7 @@ const policies = [
     href: "",
   },
   {
-    name: "Xfinity Internet Broadband Disclosures",
+    name: "Zenglobal Internet Broadband Disclosures",
     href: "",
   },
   {
@@ -138,7 +122,7 @@ export default function Footer() {
   return (
     <div className="flex flex-col h-screen">
       <footer className="fixed bottom-0 w-full bg-neutral-900 text-white">
-        <div className="bg-zinc-800 py-10">
+        <div className="bg-zinc-800 py-10 hidden md:block">
           <div className="grid grid-cols-3 gap-1 mx-[35rem] justify-center font-natoSansRegular font-regular text-sm p-1">
             <div>
               <h3 className="mb-5 text-base font-semibold font-natoSansRegular">
@@ -206,9 +190,13 @@ export default function Footer() {
           </div>
         </div>
 
+        <p className="mt-4 text-gray-300 font-natoSansRegular font-regular text-center block lg:hidden">
+          &copy; 2023 Zenglobal
+        </p>
+
         <ul className="flex flex-wrap items-center justify-center text-gray-900 dark:text-white py-6 space-x-6">
-          <li>
-            <p className="me-4 text-sm text-gray-300 font-natoSansRegular font-regular md:me-6">
+          <li className="hidden lg:block">
+            <p className="me-4 text-sm text-gray-300 font-natoSansRegular font-regular">
               &copy; 2023 Zenglobal
             </p>
           </li>
@@ -217,14 +205,14 @@ export default function Footer() {
             return (
               <li>
                 <div className="flex flex-row">
-                  <LinkIcon className="w-5" />
+                  <LinkIcon className="w-4" />
 
                   <Link
                     key={link.name}
                     href={link.href}
-                    className="ml-2 me-4 font-natoSansRegular font-regular text-sm md:me-6 "
+                    className="ml-1 me-4 font-natoSansRegular font-regular xs:me-6 p-3 text-sm sm:me-6 md:me-6 lg:text-sm xl:text-sm 2xl:text-sm"
                   >
-                    <p className="hidden md:block">{link.name}</p>
+                    <p>{link.name}</p>
                   </Link>
                 </div>
               </li>
