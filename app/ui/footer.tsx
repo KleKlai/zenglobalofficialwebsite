@@ -190,7 +190,7 @@ export default function Footer() {
           &copy; 2023 Zenglobal
         </p>
 
-        {/* <ul className="flex flex-wrap items-center justify-center text-gray-900 dark:text-white py-6 space-x-6">
+        <ul className="flex flex-wrap items-center justify-center text-gray-900 dark:text-white py-6 space-x-6">
           <li className="hidden lg:block">
             <p className="me-4 text-sm text-gray-300 font-natoSansRegular font-regular">
               &copy; 2023 Zenglobal
@@ -199,12 +199,11 @@ export default function Footer() {
           {links.map((link) => {
             const LinkIcon = link.icon;
             return (
-              <li>
+              <li key={link.name}>
                 <div className="flex flex-row">
                   <LinkIcon className="w-4" />
 
                   <Link
-                    key={link.name}
                     href={link.href}
                     className="ml-1 me-4 font-natoSansRegular font-regular xs:me-6 p-3 text-sm sm:me-6 md:me-6 lg:text-sm xl:text-sm 2xl:text-sm"
                   >
@@ -214,7 +213,7 @@ export default function Footer() {
               </li>
             );
           })}
-        </ul> */}
+        </ul>
       </footer>
     </div>
   );
