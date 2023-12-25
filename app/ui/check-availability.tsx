@@ -2,7 +2,7 @@ import React from "react";
 
 export default function CheckAvailability() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-72 mb-5">
+    <div className="flex flex-col items-center justify-center min-h-72 mb-5 w-full">
       <h1 className="text-4xl text-center font-helvetica font-semibold xs:px-5 my-14 lg:mb-10">
         Find deals on fast, low-cost and reliable internet near you
       </h1>

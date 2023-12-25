@@ -9,7 +9,7 @@ export default function InternetThatsFitYourBudget() {
 
       <div className="flex flex-col space-x-6 md:flex-row">
         <div className="w-full px-32 md:w-1/2 p-4 bg-gray-200 flex flex-col justify-center items-center rounded-lg">
-          <h2 className="text-xl text-center mb-2 font-natoSansRegular font-bold leading-normal text-violet mt-14">
+          <h2 className="text-xl text-center mb-2 font-natoSansRegular font-bold leading-normal text-tertiary mt-14">
             internet<br/>essentials
           </h2>
           <p className="text-center text-2xl py-10 font-helvetica font-semibold">
@@ -25,7 +25,7 @@ export default function InternetThatsFitYourBudget() {
         </div>
 
         <div className="w-full px-40 md:w-1/2 p-4 bg-gray-200 flex flex-col justify-center items-center rounded-lg">
-          <h2 className="text-xl text-center mb-2 font-natoSansRegular font-bold leading-normal  text-violet mt-14">
+          <h2 className="text-xl text-center mb-2 font-natoSansRegular font-bold leading-normal  text-tertiary mt-14">
             Zenglobal | Prepaid
           </h2>
           <p className="text-center text-2xl py-10 font-helvetica font-semibold">Only pay for the internet you need</p>
