@@ -8,9 +8,8 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      {/* <div className="mx-80">
-        <InternetThatsFitYourBudget />
-      </div> */}
+      <CheckAvailability />
+      <ExploreSpeedsPrices />
       <Footer />
     </div>
   );

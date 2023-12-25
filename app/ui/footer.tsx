@@ -245,7 +245,6 @@ function FooterAccordion() {
       type="single"
       collapsible
       className="px-10 w-full"
-      defaultValue="item-1"
     >
       <AccordionItem value="item-1">
         <AccordionTrigger className="font-bold tracking-tight font-notoSans py-5">
