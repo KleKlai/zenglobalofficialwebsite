@@ -197,7 +197,7 @@ export default function Footer() {
           &copy; 2023 Zenglobal
         </p>
 
-        {/* <ul className="flex flex-wrap items-center justify-center text-gray-900 dark:text-white py-6 space-x-6">
+        <ul className="flex flex-wrap items-center justify-center text-gray-900 dark:text-white py-6 space-x-6">
           <li className="hidden lg:block">
             <p className="me-4 text-sm text-gray-300 font-natoSansRegular font-regular">
               &copy; 2023 Zenglobal
@@ -221,7 +221,7 @@ export default function Footer() {
               </li>
             );
           })}
-        </ul> */}
+        </ul>
       </footer>
     </div>
   );
