@@ -48,7 +48,7 @@ export default function ExploreSpeedsPrices() {
       </h1>
       <Link href="" className="text-sm">
         New to Zenglobal?{" "}
-        <span className="underline underline-offset-8">Shop Internet</span>
+        <span className="underline underline-offset-8 decoration-indigo-500">Shop Internet</span>
       </Link>
       <div className="mt-5">
         <Button
@@ -58,21 +58,21 @@ export default function ExploreSpeedsPrices() {
           What is Internet speed?
         </Button>
       </div>
-      <div className="flex justify-center py-32">
+      <div className="flex justify-center py-10">
         <Carousel
           opts={{
             align: "start",
-            loop: true,
+            loop: false,
           }}
-          className="w-full max-w-sm"
+          className="w-full max-w-min"
         >
-          <CarouselContent>
+          <CarouselContent className="px-10">
             {speeds.map((speed) => {
               const LinkIcon = speed.icon;
               return (
-                <CarouselItem className="md:basis-1/2 lg:basis-2/4">
+                <CarouselItem key={speed.speed} className="pl-3 md:basis-1/2 lg:basis-1/3 py-10">
                   <div className="p-1">
-                    <Card>
+                    <Card className="transform transition-all duration-300 hover:scale-110 hover:border-purple-500">
                       <CardContent className="flex flex-col aspect-square items-center justify-center p-6">
                         <LinkIcon className="w-4 pb-5 text-green-500" />
                         <p className="text-3xl font-bold">{speed.speed}</p>
@@ -87,7 +87,7 @@ export default function ExploreSpeedsPrices() {
               );
             })}
           </CarouselContent>
-          <CarouselPrevious />
+          <CarouselPrevious/>
           <CarouselNext />
         </Carousel>
       </div>
