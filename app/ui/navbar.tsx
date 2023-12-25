@@ -6,6 +6,12 @@ import {
   ShoppingCartIcon,
 } from "@heroicons/react/24/outline";
 
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card";
+
 const links = [
   {
     name: "Internet",
@@ -57,8 +63,30 @@ export default function Navbar() {
           </ul>
         </div>
         <div className="flex flex-wrap items-center justify-center">
-          <PhoneArrowUpRightIcon className="h-5 w-5 mx-4 mb-1" />
-          <ShoppingCartIcon className="h-5 w-5 mx-4 mb-1" />
+          <HoverCard openDelay={0} closeDelay={0}>
+            <HoverCardTrigger>
+              <PhoneArrowUpRightIcon className="h-5 w-5 mx-4 mb-1 cursor-pointer" />
+            </HoverCardTrigger>
+            <HoverCardContent sideOffset={0} className="">
+              <div className="rounded-xl ">
+                <button className="w-full text-left py-4 px-4 hover:rounded-t-xl hover:bg-slate-200">
+                  Order Online Now
+                </button>
+                <button className="w-full text-left py-4 px-4 hover:rounded-b-xl hover:bg-slate-200">
+                  Call to Order: 855-870-1311
+                </button>
+              </div>
+            </HoverCardContent>
+          </HoverCard>
+          <HoverCard openDelay={0} closeDelay={0}>
+            <HoverCardTrigger>
+              <ShoppingCartIcon className="h-5 w-5 mx-4 mb-1 cursor-pointer" />
+            </HoverCardTrigger>
+            <HoverCardContent sideOffset={0} className="bg-neutral-800 text-white py-4 px-4">
+              Cart
+            </HoverCardContent>
+          </HoverCard>
+
           <Link
             href=""
             className="ml-1 me-4 font-helvetica xs:me-6 p-3 text-sm sm:me-6 md:me-6 lg:text-sm xl:text-sm 2xl:text-[15px]"
