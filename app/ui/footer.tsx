@@ -9,6 +9,13 @@ import {
   LinkIcon,
 } from "@heroicons/react/24/outline";
 
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
 const links = [
   {
     name: "Web of Terms of Service",
@@ -87,8 +94,8 @@ const services = [
   },
   {
     name: "Secure my Home | Business",
-    href: ""
-  }
+    href: "",
+  },
 ];
 
 const policies = [
@@ -159,7 +166,7 @@ export default function Footer() {
                         <p className="hidden md:block">{service.name}</p>
                       </Link>
                     </li>
-                  )
+                  );
                 })}
               </ul>
             </div>
@@ -179,7 +186,7 @@ export default function Footer() {
                         <p className="hidden md:block">{policy.name}</p>
                       </Link>
                     </li>
-                  )
+                  );
                 })}
               </ul>
             </div>
@@ -216,5 +223,18 @@ export default function Footer() {
         </ul>
       </footer>
     </div>
+  );
+}
+
+function FooterAccordion() {
+  return (
+    <Accordion type="single" collapsible>
+      <AccordionItem value="item-1">
+        <AccordionTrigger>About Us</AccordionTrigger>
+        <AccordionContent>
+          Yes. It adheres to the WAI-ARIA design pattern.
+        </AccordionContent>
+      </AccordionItem>
+    </Accordion>
   );
 }
