@@ -125,70 +125,83 @@ const policies = [
   },
 ];
 
+function AboutUsLink() {
+  return (
+    <ul className="space-y-2">
+      {abouts.map((about) => {
+        return (
+          <li key={about.name}>
+            <Link href={about.href} className="">
+              <p>{about.name}</p>
+            </Link>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
+function ServicesLink() {
+  return (
+    <ul className="space-y-2">
+      {services.map((service) => {
+        return (
+          <li key={service.name}>
+            <Link href={service.href} className="">
+              <p>{service.name}</p>
+            </Link>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
+function PoliciesLink() {
+  return (
+    <ul className="space-y-2 text-wrap">
+      {policies.map((policy) => {
+        return (
+          <li key={policy.name}>
+            <Link href={policy.href} className="">
+              <p>{policy.name}</p>
+            </Link>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
 export default function Footer() {
   return (
-    <div className="flex flex-col h-screen">
-      <footer className="fixed bottom-0 w-full bg-neutral-900 text-white">
-        <div className="bg-zinc-800 py-10 hidden md:block">
-          <div className="grid grid-cols-3 gap-1 mx-[35rem] justify-center font-natoSansRegular font-regular text-sm p-1">
+    <div className="flex flex-col bottom-0">
+      <footer className="w-full bg-neutral-900 text-white">
+        <div className="bg-zinc-800 py-10 block lg:hidden">
+          <FooterAccordion />
+        </div>
+
+        <div className="bg-zinc-800 py-10 hidden lg:block">
+          <div className="grid grid-cols-3 gap-1 justify-center font-natoSansRegular font-regular text-sm p-1 lg:mx-32 xl:mx-40 2xl:mx-[35rem]">
             <div>
               <h3 className="mb-5 text-base font-semibold font-natoSansRegular">
                 About Us
               </h3>
-              <ul className="space-y-2">
-                {abouts.map((about) => {
-                  return (
-                    <li key={about.name}>
-                      <Link
-                        href={about.href}
-                        className=""
-                      >
-                        <p className="hidden md:block">{about.name}</p>
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
+              <AboutUsLink />
             </div>
 
             <div>
               <h3 className="mb-5 text-base font-semibold font-natoSansRegular">
                 Services
               </h3>
-              <ul className="space-y-2">
-                {services.map((service) => {
-                  return (
-                    <li key={service.name}>
-                      <Link
-                        href={service.href}
-                        className=""
-                      >
-                        <p className="hidden md:block">{service.name}</p>
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
+              <ServicesLink />
             </div>
 
             <div>
               <h3 className="mb-5 text-base font-semibold font-natoSansRegular">
                 Policies
               </h3>
-              <ul className="space-y-2 text-wrap">
-                {policies.map((policy) => {
-                  return (
-                    <li key={policy.name}>
-                      <Link
-                        href={policy.href}
-                        className=""
-                      >
-                        <p className="hidden md:block">{policy.name}</p>
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
+              <PoliciesLink />
             </div>
           </div>
         </div>
@@ -207,7 +220,7 @@ export default function Footer() {
             const LinkIcon = link.icon;
             return (
               <li key={link.name}>
-                <div className="flex flex-row">
+                <div className="flex flex-row text-white">
                   <LinkIcon className="w-4" />
 
                   <Link
@@ -228,11 +241,34 @@ export default function Footer() {
 
 function FooterAccordion() {
   return (
-    <Accordion type="single" collapsible>
+    <Accordion
+      type="single"
+      collapsible
+      className="px-10 w-full"
+      defaultValue="item-1"
+    >
       <AccordionItem value="item-1">
-        <AccordionTrigger>About Us</AccordionTrigger>
+        <AccordionTrigger className="font-bold tracking-tight font-notoSans py-5">
+          About Us
+        </AccordionTrigger>
         <AccordionContent>
-          Yes. It adheres to the WAI-ARIA design pattern.
+          <AboutUsLink />
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-2">
+        <AccordionTrigger className="font-bold tracking-tight font-notoSans py-5">
+          Services
+        </AccordionTrigger>
+        <AccordionContent>
+          <ServicesLink />
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-3">
+        <AccordionTrigger className="font-bold tracking-tight font-notoSans py-5">
+          Policies
+        </AccordionTrigger>
+        <AccordionContent>
+          <PoliciesLink />
         </AccordionContent>
       </AccordionItem>
     </Accordion>
