@@ -21,32 +21,32 @@ const speeds = [
   {
     speed: "75",
     icon: SignalIcon,
-    color: 'text-[#0065FF]'
+    color: 'text-yellow-400'
   },
   {
     speed: "200",
     icon: SignalIcon,
-    color: 'text-[#FB0045]'
+    color: 'text-blue-500'
   },
   {
     speed: "400",
     icon: SignalIcon,
-    color: 'text-[#6138F5]'
+    color: 'text-green-300'
   },
   {
     speed: "800",
     icon: SignalIcon,
-    color: 'text-[#FFA700]'
+    color: 'text-green-400'
   },
   {
     speed: "1000",
     icon: SignalIcon,
-    color: 'text-[#3A8163]'
+    color: 'text-green-500'
   },
   {
     speed: "1200",
     icon: SignalIcon,
-    color: 'text-[#E64F00]'
+    color: 'text-green-600'
   },
 ];
 
@@ -137,8 +137,8 @@ function SpeedCarousel() {
 
 const InternetPlan = () => {
   return (
-    <div className="flex p-10 bg-white rounded-xl shadow-lg">
-      <div className="w-1/3">
+    <div className="flex flex-col bg-white rounded-xl shadow-lg p-5 sm:flex-row sm:p-10 ">
+      <div className="hidden lg:block w-1/3">
         <Image
           src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=2078&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           width={150}
@@ -147,32 +147,32 @@ const InternetPlan = () => {
           className="rounded-full w-15 h-15"
         />
       </div>
-      <div className="w-1/2 px-5 text-left">
+      <div className="text-left font-notoSans font-normal md:w-2/3 lg:w-1/2 text-base pb-5 sm:pb-0">
         <h2 className="text-base font-bold mb-5">1200 Mbps is good for</h2>
-        <ul className="list-none list-inside text-left">
+        <ul className="list-none list-inside text-left space-y-3">
           <li className="flex items-center">
-            <CheckIcon className="w-5 h-5 text-tertiary mr-2" />
+            <CheckIcon className="w-4 h-4 text-tertiary mr-2" />
             Unlimited devices
           </li>
           <li className="flex items-center">
-            <CheckIcon className="w-5 h-5 text-tertiary mr-2" />
+            <CheckIcon className="w-4 h-4 text-tertiary mr-2" />
             Ultra-connected households
           </li>
           <li className="flex items-center">
-            <CheckIcon className="w-5 h-5 text-tertiary mr-2" />
+            <CheckIcon className="w-4 h-4 text-tertiary mr-2" />
             Pro-level gaming
           </li>
           <li className="flex items-center">
-            <CheckIcon className="w-5 h-5 text-tertiary mr-2" />
+            <CheckIcon className="w-4 h-4 text-tertiary mr-2" />
             Staying ahead of the curve
           </li>
         </ul>
       </div>
-      <div className="w-1/3 flex flex-col">
-        <h3 className="text-lg font-semibold text-left pb-5">
+      <div className="flex flex-col lg:w-1/3">
+        <h3 className="text-left pb-5 sm:text-xs font-bold md:text-base lg:text-base ">
           Check availability or manage current plan
         </h3>
-        <button className="px-4 py-3 text-white font-semibold bg-tertiary rounded hover:bg-purple-900">
+        <button className="px-4 py-3 text-white text-sm font-semibold bg-tertiary rounded hover:bg-purple-900">
           See pricing in your area
         </button>
       </div>
