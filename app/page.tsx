@@ -10,7 +10,7 @@ export default function Home() {
       <Navbar />
       <CheckAvailability />
       <ExploreSpeedsPrices />
-      {/* <InternetThatsFitYourBudget /> */}
+      <InternetThatsFitYourBudget />
       <Footer />
     </div>
   );

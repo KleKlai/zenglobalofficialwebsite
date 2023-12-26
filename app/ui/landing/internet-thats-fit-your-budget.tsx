@@ -2,13 +2,13 @@ import React from "react";
 
 export default function InternetThatsFitYourBudget() {
   return (
-    <div className="p-4 mx-32 w-2/3">
-      <h1 className="text-center text-3xl font-bold mb-10 font-natoSansRegular">
+    <div className="flex flex-col justify-center items-center p-10">
+      <h1 className="text-center text-4xl tracking-wide font-semibold mb-10 font-notoSans antialiased">
         Internet that fits your budget
       </h1>
 
-      <div className="flex flex-col space-x-6 md:flex-row">
-        <div className="w-full px-32 md:w-1/2 p-4 bg-gray-200 flex flex-col justify-center items-center rounded-lg">
+      <div className="flex flex-col space-x-6 w-3/5">
+        <div className="md:w-1/2 p-4 bg-gray-100 flex flex-col justify-center items-center rounded-lg">
           <h2 className="text-xl text-center mb-2 font-natoSansRegular font-bold leading-normal text-tertiary mt-14">
             internet<br/>essentials
           </h2>
@@ -24,7 +24,7 @@ export default function InternetThatsFitYourBudget() {
           </button>
         </div>
 
-        <div className="w-full px-40 md:w-1/2 p-4 bg-gray-200 flex flex-col justify-center items-center rounded-lg">
+        <div className="md:w-1/2 p-4 bg-gray-100 flex flex-col justify-center items-center rounded-lg">
           <h2 className="text-xl text-center mb-2 font-natoSansRegular font-bold leading-normal  text-tertiary mt-14">
             Zenglobal | Prepaid
           </h2>
