@@ -2,7 +2,7 @@ import React from "react";
 
 export default function InternetThatsFitYourBudget() {
   return (
-    <div className="p-4 mx-32">
+    <div className="p-4 mx-32 w-2/3">
       <h1 className="text-center text-3xl font-bold mb-10 font-natoSansRegular">
         Internet that fits your budget
       </h1>

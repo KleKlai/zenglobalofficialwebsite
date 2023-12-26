@@ -15,31 +15,38 @@ import {
 } from "@/components/ui/carousel";
 import { SignalIcon } from "@heroicons/react/24/outline";
 import { CheckIcon } from "@heroicons/react/24/outline";
+import { cn } from "@/lib/utils"
 
 const speeds = [
   {
     speed: "75",
     icon: SignalIcon,
+    color: 'text-[#0065FF]'
   },
   {
     speed: "200",
     icon: SignalIcon,
+    color: 'text-[#FB0045]'
   },
   {
     speed: "400",
     icon: SignalIcon,
+    color: 'text-[#6138F5]'
   },
   {
     speed: "800",
     icon: SignalIcon,
+    color: 'text-[#FFA700]'
   },
   {
     speed: "1000",
     icon: SignalIcon,
+    color: 'text-[#3A8163]'
   },
   {
     speed: "1200",
     icon: SignalIcon,
+    color: 'text-[#E64F00]'
   },
 ];
 
@@ -63,7 +70,7 @@ export default function ExploreSpeedsPrices() {
           What is Internet speed?
         </Button>
       </div>
-      <div className="flex justify-center py-10">
+      <div className="flex justify-center flex-wrap py-10 max-w-30">
         <SpeedCarousel />
       </div>
       <div className="flex items-center justify-center">
@@ -89,24 +96,27 @@ function SpeedCarousel() {
   return (
     <Carousel
       opts={{
-        align: "start",
+        align: "center",
         loop: false,
+        trimSnaps: true,
+        startIndex: 3,
       }}
       className="w-full max-w-min"
       setApi={setApi}
     >
       <CarouselContent className="px-10">
-        {speeds.map((speed) => {
+        {speeds.map((speed, index) => {
           const LinkIcon = speed.icon;
           return (
             <CarouselItem
               key={speed.speed}
-              className="pl-3 md:basis-1/2 lg:basis-1/3 py-10"
+              className="pl-2 xs:basis-1 sm:basis-1 md:basis-1/2 lg:basis-1/3 py-10"
             >
               <div className="p-1">
                 <Card className="transform transition-all duration-300 hover:scale-110 hover:border-indigo-500">
-                  <CardContent className="flex flex-col aspect-square items-center justify-center p-6">
-                    <LinkIcon className="w-4 pb-5 text-green-500" />
+                  <CardContent className="flex flex-col aspect-square items-center justify-center">
+                    <LinkIcon className={cn("w-4 pb-5", speed.color)} />
+                    {/* <LinkIcon className="w-4 pb-5 text-green-500" /> */}
                     <p className="text-3xl font-bold">{speed.speed}</p>
                     <p className="py-4">Mbps</p>
                     <p className="font-normal text-slate-500 text-xs">

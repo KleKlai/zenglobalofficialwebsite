@@ -3,9 +3,9 @@ import React from "react";
 export default function CheckAvailability() {
   return (
     <div className="flex flex-col items-center justify-center min-h-72 mb-5 w-full">
-      <h1 className="text-4xl text-center font-helvetica font-semibold xs:px-5 my-14 lg:mb-10">
+      <p className="text-center font-helvetica font-semibold xs:text-3xl md:py-14 px-10 py-5 lg:text-xl lg:py-10 2xl:text-3xl">
         Find deals on fast, low-cost and reliable internet near you
-      </h1>
+      </p>
       <div className="flex flex-col justify-center w-full max-w-3xl border-black px-5">
         <div className="flex flex-col w-full">
           <span className="text-xs text-slate-700 mb-2">Street address and apartment</span>
