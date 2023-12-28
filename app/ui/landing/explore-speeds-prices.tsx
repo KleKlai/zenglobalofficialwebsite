@@ -93,6 +93,11 @@ function SpeedCarousel() {
       console.log(api);
     });
   }, [api]);
+
+  const handleCardClick = (index: number) => {
+    console.log(index)
+  };
+
   return (
     <Carousel
       opts={{
@@ -110,6 +115,7 @@ function SpeedCarousel() {
           return (
             <CarouselItem
               key={speed.speed}
+              onClick={() => handleCardClick(index)}
               className="pl-2 xs:basis-1 sm:basis-1 md:basis-1/2 lg:basis-1/3 py-10"
             >
               <div className="p-1">

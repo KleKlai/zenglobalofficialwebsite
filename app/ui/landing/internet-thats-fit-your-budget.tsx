@@ -7,7 +7,7 @@ export default function InternetThatsFitYourBudget() {
         Internet that fits your budget
       </h1>
 
-      <div className="flex flex-col space-x-6 w-3/5">
+      <div className="flex flex-row space-x-6 w-3/5">
         <div className="md:w-1/2 p-4 bg-gray-100 flex flex-col justify-center items-center rounded-lg">
           <h2 className="text-xl text-center mb-2 font-natoSansRegular font-bold leading-normal text-tertiary mt-14">
             internet<br/>essentials

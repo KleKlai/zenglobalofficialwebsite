@@ -7,11 +7,8 @@ import Navbar from "./ui/navbar";
 export default function Home() {
   return (
     <div>
-      <Navbar />
-      <CheckAvailability />
       <ExploreSpeedsPrices />
       <InternetThatsFitYourBudget />
-      <Footer />
     </div>
   );
 }

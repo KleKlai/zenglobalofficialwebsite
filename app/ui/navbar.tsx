@@ -15,23 +15,23 @@ import {
 const links = [
   {
     name: "Internet",
-    href: "",
+    href: "/internet-service",
   },
   {
     name: "Low-Cost Computer",
-    href: "",
+    href: "/low-cost-computer",
   },
   {
     name: "Home Security",
-    href: "",
+    href: "/home-security",
   },
   {
     name: "Learning Center",
-    href: "",
+    href: "/learning-center",
   },
   {
     name: "Our Mission",
-    href: "",
+    href: "/our-mission",
   },
 ];
 export default function Navbar() {
