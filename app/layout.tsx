@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./ui/navbar";
 import Footer from "./ui/footer";
 import CheckAvailability from "./ui/check-availability";
+import { outfit } from "./ui/fonts";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -19,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${outfit.variable} font-sans`}>
         <Navbar />
         <CheckAvailability />
 

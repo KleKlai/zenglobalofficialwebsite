@@ -4,8 +4,6 @@ export const helvetica = localFont({
     src: [
         {
             path: '../../public/fonts/Helvetica/Helvetica-Bold.ttf',
-            weight: '700',
-            style: 'normal'
         }
     ],
     variable: '--font-helvetica'
@@ -14,10 +12,17 @@ export const helvetica = localFont({
 export const notoSans = localFont({
     src: [
         {
-            path: '../../public/fonts/Nato_Sans_JP/static/NotoSansJP-Regular.ttf',
-            weight: '400',
-            style: 'normal'
+            path: '../../public/fonts/Noto_Sans_JP/NotoSansJP-VariableFont_wght.ttf',
         }
     ],
     variable: '--font-natoSans-regular'
+})
+
+export const outfit = localFont({
+    src: [
+        {
+            path: '../../public/fonts/Outfit/Outfit-VariableFont_wght.ttf',
+        }
+    ],
+    variable: '--font-outfit'
 })
