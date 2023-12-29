@@ -13,7 +13,7 @@ export default function WhyZenglobal() {
   return (
     <div className="flex flex-col items-center">
         <div className="p-10">
-            <h1 className="font-outfit font-semibold text-4xl antialiased">Why Zenglobal?</h1>
+            <h1 className="font-outfit font-semibold text-3xl antialiased md:text-4xl">Why Zenglobal?</h1>
         </div>
       <div className="flex flex-wrap lg:space-x-4 p-10 justify-center">
         <CustomCard
@@ -44,7 +44,7 @@ export default function WhyZenglobal() {
 
 const CustomCard = ({ src, alt, title, description, footer }: any) => {
   return (
-    <div className="max-w-md rounded overflow-hidden shadow-lg flex flex-col justify-start">
+    <div className="max-w-md rounded overflow-hidden shadow-lg flex flex-col justify-start my-5 sm:mt-10">
       <Image
         className="w-full h-64 object-cover object-center"
         src={src}
