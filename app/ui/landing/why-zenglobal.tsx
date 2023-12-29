@@ -13,7 +13,7 @@ export default function WhyZenglobal() {
   return (
     <div className="flex flex-col items-center">
         <div className="p-10">
-            <h1 className="font-outfit font-semibold text-4xl antialiased">Why Xfinity?</h1>
+            <h1 className="font-outfit font-semibold text-4xl antialiased">Why Zenglobal?</h1>
         </div>
       <div className="flex flex-wrap lg:space-x-4 p-10 justify-center">
         <CustomCard

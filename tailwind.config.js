@@ -23,8 +23,9 @@ module.exports = {
     extend: {
       fontFamily: {
         helvetica: ["var(--font-helvetica)", ...fontFamily.sans],
-        notoSans: ["var(--font-natoSans-regular)", ...fontFamily.sans],
+        notoSans: ["var(--font-natoSans)", ...fontFamily.sans],
         outfit: ["var(--font-outfit)", ...fontFamily.sans],
+        roboto: ["var(--font-roboto)", ...fontFamily.sans],
       },
       colors: {
         border: "hsl(var(--border))",

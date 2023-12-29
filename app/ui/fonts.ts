@@ -15,7 +15,7 @@ export const notoSans = localFont({
             path: '../../public/fonts/Noto_Sans_JP/NotoSansJP-VariableFont_wght.ttf',
         }
     ],
-    variable: '--font-natoSans-regular'
+    variable: '--font-natoSans'
 })
 
 export const outfit = localFont({
@@ -25,4 +25,13 @@ export const outfit = localFont({
         }
     ],
     variable: '--font-outfit'
+})
+
+export const roboto = localFont({
+    src: [
+        {
+            path: '../../public/fonts/Roboto/Roboto-Regular.ttf',
+        }
+    ],
+    variable: '--font-roboto'
 })
