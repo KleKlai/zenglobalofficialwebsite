@@ -8,6 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function WhyZenglobal() {
   return (
@@ -61,9 +62,9 @@ const CustomCard = ({ src, alt, title, description, footer }: any) => {
         </p>
       </div>
       <div className="px-6 pt-4 pb-10 flex items-center justify-center">
-        <button className="inline-block border-2 w-1/2 rounded-lg py-3 font-semibold xs:ml-0 md:ml-2 lg:ml-2 hover:bg-zinc-800 hover:text-white">
+        <Link href="" className="inline-block text-center border-2 w-1/2 rounded-lg py-3 px-2 font-semibold xs:ml-0 md:ml-2 lg:ml-2 hover:bg-zinc-800 hover:text-white">
           {footer}
-        </button>
+        </Link>
       </div>
     </div>
   );
