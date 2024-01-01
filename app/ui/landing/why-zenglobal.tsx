@@ -57,7 +57,7 @@ const CustomCard = ({ src, alt, title, description, footer }: any) => {
         <div className="text-gray-800 font-outfit font-bold text-center text-xl mb-6 antialiased">
           {title}
         </div>
-        <p className="text-gray-700 text-sm font-notoSans font-normal text-center">
+        <p className="text-gray-700 text-sm font-normal text-center font-roboto">
           {description}
         </p>
       </div>
