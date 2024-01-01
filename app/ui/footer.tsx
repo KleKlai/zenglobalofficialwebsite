@@ -131,7 +131,7 @@ function AboutUsLink() {
       {abouts.map((about) => {
         return (
           <li key={about.name}>
-            <Link href={about.href} className="">
+            <Link href={about.href} className="text-sm font-outfit font-normal">
               <p>{about.name}</p>
             </Link>
           </li>
@@ -147,7 +147,7 @@ function ServicesLink() {
       {services.map((service) => {
         return (
           <li key={service.name}>
-            <Link href={service.href} className="">
+            <Link href={service.href} className="text-sm font-outfit font-normal">
               <p>{service.name}</p>
             </Link>
           </li>
@@ -163,7 +163,7 @@ function PoliciesLink() {
       {policies.map((policy) => {
         return (
           <li key={policy.name}>
-            <Link href={policy.href} className="">
+            <Link href={policy.href} className="text-sm font-outfit font-normal">
               <p>{policy.name}</p>
             </Link>
           </li>
@@ -184,21 +184,21 @@ export default function Footer() {
         <div className="bg-zinc-800 py-10 hidden lg:block">
           <div className="grid grid-cols-3 gap-1 justify-center font-roboto font-normal text-base p-1 lg:mx-32 xl:mx-40 2xl:mx-[35rem]">
             <div>
-              <h3 className="mb-5 text-base font-semibold font-roboto">
+              <h3 className="mb-5 text-lg font-semibold font-roboto">
                 About Us
               </h3>
               <AboutUsLink />
             </div>
 
             <div>
-              <h3 className="mb-5 text-base font-semibold font-roboto">
+              <h3 className="mb-5 text-lg font-semibold font-roboto">
                 Services
               </h3>
               <ServicesLink />
             </div>
 
             <div>
-              <h3 className="mb-5 text-base font-semibold font-roboto">
+              <h3 className="mb-5 text-lg font-semibold font-roboto">
                 Policies
               </h3>
               <PoliciesLink />
@@ -212,7 +212,7 @@ export default function Footer() {
 
         <ul className="flex flex-wrap items-center justify-center text-gray-900 dark:text-white py-6 space-x-6">
           <li className="hidden lg:block">
-            <p className="me-4 text-base text-gray-300 font-roboto font-medium">
+            <p className="me-4 text-base text-gray-300 font-roboto font-base">
               &copy; 2023 Zenglobal
             </p>
           </li>
@@ -225,7 +225,7 @@ export default function Footer() {
 
                   <Link
                     href={link.href}
-                    className="ml-1 me-4 font-roboto font-medium xs:me-6 p-3 text-sm sm:me-6 md:me-6 lg:text-sm xl:text-sm 2xl:text-sm"
+                    className="ml-1 me-4 font-roboto font-base xs:me-6 p-3 text-sm sm:me-6 md:me-6 lg:text-sm xl:text-sm 2xl:text-sm"
                   >
                     <p>{link.name}</p>
                   </Link>
