@@ -4,11 +4,11 @@ import React from "react";
 export default function InternetThatsFitYourBudget() {
   return (
     <div className="flex flex-col items-center">
-      <h1 className="text-center text-3xl tracking-wide font-semibold p-8 font-outfit antialiased lg:mt-14 text-4xl">
+      <h1 className="text-center text-3xl tracking-wide font-semibold p-8 font-outfit antialiased text-zinc-800 lg:mt-14 text-4xl">
         Internet that fits your budget
       </h1>
 
-      <div className="flex flex-wrap lg:space-x-4 p-5 justify-center">
+      <div className="flex flex-wrap lg:space-x-8 p-5 justify-center">
         <CustomCard
           title={["internet", <br key="internet-essentials" />, "essentials"]}
           description="Fast. Reliable. Still under Php 600/mo."
@@ -50,7 +50,7 @@ const CustomCard = ({
         {title}
       </h2>
       <div className="h-1/2">
-        <p className="text-center text-2xl py-10 font-roboto font-semibold">
+        <p className="text-center text-2xl py-10 font-outfit font-semibold text-zinc-800">
           {description}
         </p>
         <p className="text-center">{subDescription}</p>
@@ -58,7 +58,7 @@ const CustomCard = ({
       <div className="px-6 pt-4 pb-10 flex items-center justify-center">
         <Link
           href={href}
-          className="inline-block border-2 w-1/2 rounded-lg py-3 font-semibold xs:ml-0 md:ml-2 lg:ml-2 bg-zinc-800 text-white"
+          className="inline-block border-2 rounded-lg p-4 font-medium xs:ml-0 md:ml-2 lg:ml-2 bg-zinc-800 text-white"
         >
           {linkTitle}
         </Link>

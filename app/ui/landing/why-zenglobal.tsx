@@ -54,15 +54,15 @@ const CustomCard = ({ src, alt, title, description, footer }: any) => {
         height={500}
       />
       <div className="px-6 py-4">
-        <div className="text-gray-800 font-outfit font-bold text-center text-xl mb-6 antialiased">
+        <div className="text-zinc-800 font-outfit font-bold text-center text-xl mb-6 antialiased">
           {title}
         </div>
-        <p className="text-gray-700 text-sm font-normal text-center font-roboto">
+        <p className="text-gray-900 text-sm font-normal text-center font-roboto px-5">
           {description}
         </p>
       </div>
       <div className="px-6 pt-4 pb-10 flex items-center justify-center">
-        <Link href="" className="inline-block text-center border-2 w-1/2 rounded-lg py-3 px-2 font-semibold xs:ml-0 md:ml-2 lg:ml-2 hover:bg-zinc-800 hover:text-white">
+        <Link href="" className="inline-block text-center border-2 w-1/2 rounded-lg py-3 px-2 font-semibold xs:ml-0 md:ml-2 lg:ml-2 hover:bg-zinc-800 hover:border-zinc-800 hover:text-white">
           {footer}
         </Link>
       </div>
