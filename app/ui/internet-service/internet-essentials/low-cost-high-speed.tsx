@@ -5,7 +5,7 @@ import WiFi from "@/public/assets/Stylized_Icon_Network_Wifi_green50.svg";
 export default function LowCostHighSpeed() {
   return (
     <div className="h-4/5 flex items-center justify-center bg-slate-100">
-      <div className="text-center w-1/3 py-20">
+      <div className="text-center py-20 px-5 lg:w-1/3">
         <div className="flex items-center justify-center mb-10">
           <WiFi />
         </div>

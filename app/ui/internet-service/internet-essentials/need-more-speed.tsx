@@ -7,7 +7,7 @@ export default function NeedMoreSpeed() {
       <h1 className="text-center text-3xl tracking-wide font-semibold p-8 font-outfit antialiased lg:mt-14 text-4xl">
         Need more <span className="text-tertiary">speed</span>?
       </h1>
-      <div className="w-1/3 text-center text-sm">
+      <div className="text-center text-sm px-5 lg:w-1/3 lg:px-0">
         We understand that some families need internet speed to work, learn, and
         stream. Internet Essentials Plus has double the speed up to 100 Mbps
         plus free equipment for ₱1500/mo. No credit check. No cancellation fee.
