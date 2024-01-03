@@ -31,7 +31,7 @@ export default function Hero() {
         <div className="w-1/2">
           <p className="text-3xl font-semibold font-outfit text-center py-8">
             A home Internet connection is more essential now than ever for
-            today's families. Since its inception just a few years ago, Internet
+            today&apos;s families. Since its inception just a few years ago, Internet
             Essentials has already linked numerous filipino to the diverse array
             of opportunities offered by the Internet, spanning education, job
             skills training, and access to healthcare resources.
