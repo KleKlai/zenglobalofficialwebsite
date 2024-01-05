@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export default function OfferCards() {
   return (
-    <div className="flex flex-wrap lg:space-x-4 pb-10 justify-center">
+    <div className="flex flex-wrap lg:space-x-4 pb-10 px-6 justify-center">
       <CustomCard
         src="https://images.unsplash.com/photo-1498814217031-5a856f4a18ac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="Person wearing virtual reality goggles"

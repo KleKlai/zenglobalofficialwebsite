@@ -10,7 +10,7 @@ import Link from "next/link";
 export default function FAQ() {
   return (
     <div className="flex flex-col items-center justify-center">
-      <h1 className="text-3xl font-outfit font-semibold text-zinc-800">
+      <h1 className="text-3xl font-outfit font-semibold text-zinc-800 text-center">
         Questions? Here are the answers.
       </h1>
       <div className="text-base font-outfit bg-gray-100 w-2/4 px-20 mt-14 mb-14 text-zinc-800">
@@ -40,7 +40,7 @@ export default function FAQ() {
         </Accordion>
       </div>
       <div></div>
-      <div className="flex flex-col px-6 pt-6 pb-10 items-center justify-center">
+      <div className="flex flex-col px-6 pt-6 pb-10 items-center justify-center text-center">
         <p>
           Have more questions about Internet Essentials? Our live specialists
           can help.
