@@ -80,9 +80,9 @@ export default function Navbar() {
           </HoverCard>
           <HoverCard openDelay={0} closeDelay={0}>
             <HoverCardTrigger>
-              <ShoppingCartIcon className="h-5 w-5 mx-4 mb-1 cursor-pointer" />
+              <ShoppingCartIcon className="h-5 w-5 mx-4 mb-1 cursor-pointer border-none" />
             </HoverCardTrigger>
-            <HoverCardContent sideOffset={0} className="bg-neutral-800 text-white py-4 px-4">
+            <HoverCardContent sideOffset={0} className="bg-neutral-800 text-white py-4 px-4 border-neutral-800">
               Cart
             </HoverCardContent>
           </HoverCard>

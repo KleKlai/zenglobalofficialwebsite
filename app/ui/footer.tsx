@@ -19,7 +19,7 @@ import {
 const links = [
   {
     name: "Web of Terms of Service",
-    href: "",
+    href: "/terms",
     icon: NewspaperIcon,
   },
   {
@@ -29,17 +29,17 @@ const links = [
   },
   {
     name: "Privacy Policy",
-    href: "",
+    href: "/privacy-policy",
     icon: DocumentTextIcon,
   },
   {
     name: "Your Privacy Choices",
-    href: "",
+    href: "/your-privacy-choices",
     icon: AdjustmentsHorizontalIcon,
   },
   {
     name: "Ad Choices",
-    href: "",
+    href: "/ad-choice",
     icon: CubeTransparentIcon,
   },
 ];
@@ -101,27 +101,27 @@ const services = [
 const policies = [
   {
     name: "Customer Guarantee",
-    href: "",
+    href: "policies/customer-guarantee",
   },
   {
     name: "Customer Agreements and Policies",
-    href: "",
+    href: "policies/customer-agreements-and-policies",
   },
   {
     name: "Visitor Agreement!",
-    href: "",
+    href: "policies/visitor-agreement",
   },
   {
     name: "Zenglobal Internet Broadband Disclosures",
-    href: "",
+    href: "policies/zenglobal-internet-broadband-disclosures",
   },
   {
     name: "Privacy Center",
-    href: "",
+    href: "policies/privacy-center",
   },
   {
     name: "Social Responsibility",
-    href: "",
+    href: "policies/social-responsibility",
   },
 ];
 
