@@ -44,7 +44,7 @@ export default function PrivacyPolicyContent() {
             </p>
             <TooltipContent>
               <p>
-                <strong>"Personal Information"</strong>includes any information
+                <strong>&quot;Personal Information&quot;</strong>includes any information
                 that is linked or reasonably linkable to you or your household.
               </p>
             </TooltipContent>
@@ -77,8 +77,8 @@ export default function PrivacyPolicyContent() {
           and devices where this policy is referenced. These may include
           Zenglobal-branded services, Oro Dragon branded Services and other
           products and services we deliver. This Privacy Policy also applies
-          when you otherwise interact with us. We'll refer to all of these as
-          our "Services" in this Privacy Policy. It also applies to the
+          when you otherwise interact with us. We&apos;ll refer to all of these as
+          our &quot;Services&quot; in this Privacy Policy. It also applies to the
           information we collect about you from third parties.
         </p>
         <h1 className="font-semibold text-2xl py-5">
@@ -90,8 +90,8 @@ export default function PrivacyPolicyContent() {
           identify you - such as device numbers, IP addresses, and account
           numbers. It may also include information that does personally identify
           you, such as your name, address, and telephone number. We call any
-          information that identifies you "personally identifiable information"
-          or "PII."
+          information that identifies you &quot;personally identifiable information&quot;
+          or &quot;PII.&quot;
         </p>
         <TooltipProvider>
           <Tooltip>
@@ -253,7 +253,7 @@ export default function PrivacyPolicyContent() {
           your consent.
         </ParagraphText>
         <ParagraphText className="mt-4">
-          We share personal information with others when it's needed to provide
+          We share personal information with others when it&apos;s needed to provide
           you with our Services, including credit reporting agencies. We also
           share personal information with others:
         </ParagraphText>
@@ -284,7 +284,7 @@ export default function PrivacyPolicyContent() {
                 instances, you may want us to share your name, physical address,
                 or email address with another company, such as when you are
                 signing up for a third-party service through one of our
-                platforms, such as the X1, Flex, or Xumo TV platform. In that
+                platforms, such as the X1, or Flex platform. In that
                 instance, we will make sure you give us clear direction to do
                 so, before we pass that information on.
               </p>
@@ -316,7 +316,7 @@ export default function PrivacyPolicyContent() {
                 title="Account owners and other authorized users"
               />
               <AccordionContentParagraph>
-                We may share information about a customer's account and use of a
+                We may share information about a customer&apos;s account and use of a
                 Service to the primary account owner following appropriate
                 authentication. The primary account owner may also allow others
                 to see information on the account.
@@ -431,7 +431,7 @@ export default function PrivacyPolicyContent() {
           customer communications. We do not read your outgoing or incoming
           email, file attachments, video mail, private chat, or instant
           messages. However, we (along with our service providers) use software
-          and hardware tools to help prevent and block "spam" emails, viruses,
+          and hardware tools to help prevent and block &quot;spam&quot; emails, viruses,
           spyware, and other harmful or unwanted communications and programs
           from being sent and received over Zenglobal.net email and the
           Zenglobal Services. To help protect you and the Services against these
