@@ -322,14 +322,14 @@ export default function PrivacyPolicyContent() {
           Although we take the responsibility of safeguarding your personal
           information seriously, no security measures are 100% effective and we
           cannot guarantee that these practices will prevent every unauthorized
-          attempt to access, use, or disclose your information. Comcast also
+          attempt to access, use, or disclose your information. Zenglobal also
           takes additional steps to increase the security and reliability of
           customer communications. We do not read your outgoing or incoming
           email, file attachments, video mail, private chat, or instant
           messages. However, we (along with our service providers) use software
           and hardware tools to help prevent and block "spam" emails, viruses,
           spyware, and other harmful or unwanted communications and programs
-          from being sent and received over Comcast.net email and the Comcast
+          from being sent and received over Zenglobal.net email and the Zenglobal
           Services. To help protect you and the Services against these harmful
           or unwanted communications and programs, these tools may automatically
           scan your emails, video mails, instant messages, file attachments, and
@@ -366,6 +366,14 @@ export default function PrivacyPolicyContent() {
           that we have previously collected about you, we will notify you
           through written, electronic, or other means so that you can make any
           necessary decisions about your ongoing use of our Services.
+        </ParagraphText>
+        <ParagraphTitle title="How to contact us with questions about this Privacy Policy" />
+        <ParagraphText>
+          Send us a message: legal@zenglobalics.com
+          <br />
+          Be sure to include your name and address, your Zenglobal account
+          number (if applicable), and a daytime telephone number where we can
+          reach you.
         </ParagraphText>
       </div>
     </div>
