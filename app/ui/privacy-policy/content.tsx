@@ -270,9 +270,11 @@ export default function PrivacyPolicyContent() {
         <TooltipProvider>
           If we share your personal information with other companies for their
           own marketing and advertising activities, we will first get your
-          consent. This may be through {" "}
+          consent. This may be through{" "}
           <Tooltip>
-            <TooltipTrigger className="underline text-blue-600 cursor-pointer">opt-in or opt-out settings,</TooltipTrigger>
+            <TooltipTrigger className="underline text-blue-600 cursor-pointer">
+              opt-in or opt-out settings,
+            </TooltipTrigger>
             <TooltipContent>
               <p>
                 For example, if we share personal information that does not
@@ -289,6 +291,82 @@ export default function PrivacyPolicyContent() {
           </Tooltip>
           depending on the type of personal information shared.
         </TooltipProvider>
+        <ParagraphText className="mt-4">
+          We may also share personal information that does not identify you with
+          third parties for their own marketing and advertising purposes, which
+          you can opt out of. This mainly occurs when you interact with our
+          websites and mobile applications that contain third-party cookies or
+          other advertising trackers.
+        </ParagraphText>
+
+        <Accordion
+          type="single"
+          collapsible
+          className="p-2 mt-4 bg-gray-100 rounded-md"
+        >
+          <AccordionItem value="item-1">
+            <AccordionTrigger className="pl-4">
+              Learn more about when and with whom we share information
+            </AccordionTrigger>
+            <AccordionContent className="pl-4">-</AccordionContent>
+          </AccordionItem>
+        </Accordion>
+
+        <ParagraphTitle title="How we protect your information" />
+        <ParagraphText>
+          We follow industry-standard practices to secure the information we
+          collect to prevent the unauthorized access, use, or disclosure of any
+          personal information we collect and maintain. These security practices
+          include technical, administrative, and physical safeguards, which may
+          vary, depending on the type and sensitivity of the information.
+          Although we take the responsibility of safeguarding your personal
+          information seriously, no security measures are 100% effective and we
+          cannot guarantee that these practices will prevent every unauthorized
+          attempt to access, use, or disclose your information. Comcast also
+          takes additional steps to increase the security and reliability of
+          customer communications. We do not read your outgoing or incoming
+          email, file attachments, video mail, private chat, or instant
+          messages. However, we (along with our service providers) use software
+          and hardware tools to help prevent and block "spam" emails, viruses,
+          spyware, and other harmful or unwanted communications and programs
+          from being sent and received over Comcast.net email and the Comcast
+          Services. To help protect you and the Services against these harmful
+          or unwanted communications and programs, these tools may automatically
+          scan your emails, video mails, instant messages, file attachments, and
+          other files and communications. We do not use these tools for
+          marketing or advertising.
+        </ParagraphText>
+        <ParagraphTitle title="How long we keep your information" />
+        <ParagraphText>
+          We keep your personal information for different lengths of time
+          depending on the type of information and the business and legal
+          requirements. For example, if you are a customer, we keep information
+          that personally identifies you as long as you subscribe to one or more
+          of our Services. If you no longer subscribe to a Service, we still may
+          need that information for business and legal requirements, such as to
+          protect against fraud, calculate taxes, or respond to legal requests.
+          Other information is deleted automatically after a set period of time,
+          often set by law, unless we are legally required to hold it longer,
+          such as for pending litigation. We destroy, de-identify, or anonymize
+          the information when it is no longer needed in identifiable form.
+        </ParagraphText>
+        <ParagraphTitle title="How to access and correct the information in our records" />
+        <ParagraphText>
+          Part of our commitment to transparency includes giving our customers
+          access to the personal information we have about them. If you
+          subscribe to our Services, you have the ability to see and correct
+          your personally identifiable information through your online account
+          services.
+        </ParagraphText>
+        <ParagraphTitle title="Changes to this Privacy Policy" />
+        <ParagraphText>
+          We may change this Privacy Policy over time as our business needs and
+          those of our customers change. If we make material changes to this
+          Privacy Policy that increase our rights to use personal information
+          that we have previously collected about you, we will notify you
+          through written, electronic, or other means so that you can make any
+          necessary decisions about your ongoing use of our Services.
+        </ParagraphText>
       </div>
     </div>
   );
