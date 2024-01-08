@@ -187,10 +187,88 @@ export default function PrivacyPolicyContent() {
                 <li>Personalize communications and your experience</li>
                 <li>Send you service-related announcements and surveys</li>
               </ul>
+              <h3 className="uppercase py-4 font-normal text-base">
+                To understand your use of and make improvements to our services
+              </h3>
+              <ul className="list-disc ml-7 space-y-3 font-normal text-base mb-5">
+                <li>Understand the use of our existing Services</li>
+                <li>Identify and develop new products and services</li>
+                <li>
+                  Create measurement and analytics reports for us and others
+                </li>
+              </ul>
+              <h3 className="uppercase py-4 font-normal text-base">
+                To provide recommendations and deliver relevant advertising
+              </h3>
+              <ul className="list-disc ml-7 space-y-3 font-normal text-base mb-5">
+                <li>Market the Services</li>
+                <li>
+                  Let you know which products and services we think may be of
+                </li>
+                <li>
+                  Help third-party advertisers and programmers deliver more
+                  relevant advertising on our Services and other services and
+                  platforms
+                </li>
+              </ul>
+              <h3 className="uppercase py-4 font-normal text-base">
+                TO INVESTIGATE THEFT OR OTHER ILLEGAL ACTIVITIES, TO ENSURE A
+                SECURE ONLINE ENVIRONMENT, AND TO PROTECT HEALTH AND SAFETY
+              </h3>
+              <ul className="list-disc ml-7 space-y-3 font-normal text-base mb-5">
+                <li>Detect the unauthorized use, or abuse of the Services</li>
+                <li>
+                  Protect our customers from fraudulent, abusive, or unlawful
+                  use of the Services
+                </li>
+                <li>Protect our rights, our personnel, and our property</li>
+                <li>Comply with applicable law</li>
+                <li>
+                  To protect the health and safety of our customers, employees,
+                  contractors, or the general public
+                </li>
+              </ul>
             </AccordionContent>
           </AccordionItem>
         </Accordion>
+
+        <ParagraphTitle title="When and with whom we share information" />
+        <ParagraphText>
+          You are in control of your data. We do not sell, and have never sold,
+          information that identifies who you are to anyone. This includes your
+          Internet usage information, video usage information, or call detail
+          information. If you participate in offers that require us to disclose
+          your identifiable data, we will, but only at your direction and with
+          your consent.
+        </ParagraphText>
+
+        <ParagraphTitle title="When and with whom we share information" />
+        <ParagraphText>
+          You are in control of your data. We do not sell, and have never sold,
+          information that identifies who you are to anyone. This includes your
+          Internet usage information, video usage information, or call detail
+          information. If you participate in offers that require us to disclose
+          your identifiable data, we will, but only at your direction and with
+          your consent.
+        </ParagraphText>
+        <ParagraphText>
+          We share personal information with others when it's needed to provide
+          you with our Services, including credit reporting agencies. We also
+          share personal information with others:
+        </ParagraphText>
       </div>
     </div>
   );
 }
+
+type ParagraphTitleProps = {
+  title: string;
+};
+
+const ParagraphTitle = ({ title }: ParagraphTitleProps) => {
+  return <h1 className="font-semibold text-2xl py-5">{title}</h1>;
+};
+
+const ParagraphText = ({ children }: any) => {
+  return <p className="">{children};</p>;
+};
