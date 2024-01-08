@@ -12,6 +12,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { cn } from "@/lib/utils";
 
 export default function PrivacyPolicyContent() {
   return (
@@ -308,7 +309,110 @@ export default function PrivacyPolicyContent() {
             <AccordionTrigger className="pl-4">
               Learn more about when and with whom we share information
             </AccordionTrigger>
-            <AccordionContent className="pl-4">-</AccordionContent>
+            <AccordionContent className="px-4">
+              <hr className="border-1 mt-4 border-zinc-800" />
+              <AccordionContentTitle
+                className="font-semibold"
+                title="Account owners and other authorized users"
+              />
+              <AccordionContentParagraph>
+                We may share information about a customer's account and use of a
+                Service to the primary account owner following appropriate
+                authentication. The primary account owner may also allow others
+                to see information on the account.
+              </AccordionContentParagraph>
+              <hr className="border-1 mt-4 border-zinc-800" />
+              <AccordionContentTitle
+                className="font-semibold"
+                title=" Service providers"
+              />
+              <AccordionContentParagraph>
+                To provide and support the Services, sometimes we use other
+                companies as service providers to transmit, collect, process, or
+                store information for us. We require these service providers to
+                treat the information we share with them as confidential and to
+                use it only for providing their services to us. These include:
+              </AccordionContentParagraph>
+              <AccordionContentTitle
+                className="font-semibold"
+                title="BILLING AND COLLECTION PROVIDERS"
+              />
+              <AccordionContentParagraph>
+                Such as payment processors and organizations that assist us in
+                assessing your credit and payment status
+              </AccordionContentParagraph>
+              <AccordionContentTitle
+                className="font-semibold"
+                title="ACCOUNTING, AUDITING, AND TAX PROVIDERS"
+              />
+              <AccordionContentTitle
+                className="font-semibold"
+                title="PROFESSIONAL SERVICES PROVIDERS"
+              />
+              <AccordionContentParagraph>
+                Such as firms that provide consultative services, assist with
+                improving our programming, provide legal services, or supply
+                project-based resources and assistance
+              </AccordionContentParagraph>
+              <AccordionContentTitle
+                className="font-semibold"
+                title="ANALYTICS SERVICES"
+              />
+              <AccordionContentParagraph>
+                Including entities that analyze traffic to and on our websites,
+                analyze how our Services are used, and assist with identifying
+                and communicating with potential customers
+              </AccordionContentParagraph>
+              <AccordionContentTitle
+                className="font-semibold"
+                title="MARKETING, ADVERTISING, AND SALES"
+              />
+              <AccordionContentParagraph>
+                Entities that assist us in creating and executing marketing,
+                advertising, and sales programs, including order application
+                processing, and printing, mailing, and electronic communications
+                services
+              </AccordionContentParagraph>
+              <AccordionContentTitle
+                className="font-semibold"
+                title="SECURITY PROVIDERS"
+              />
+              <AccordionContentParagraph>
+                Such as entities that assist with security incident verification
+                and response, service notifications, fraud prevention, identity
+                verification and management, and authentication
+              </AccordionContentParagraph>
+              <AccordionContentTitle
+                className="font-semibold"
+                title="INFORMATION TECHNOLOGY PROVIDERS"
+              />
+              <AccordionContentParagraph>
+                Such as entities that assist with website design, hosting, and
+                maintenance, data and software storage, and network operations
+              </AccordionContentParagraph>
+              <AccordionContentTitle
+                className="font-semibold"
+                title="CUSTOMER SERVICE SUPPORT"
+              />
+              <AccordionContentParagraph>
+                Including services related to our call centers, installation,
+                maintenance, and repair services
+              </AccordionContentParagraph>
+
+              <hr className="border-1 mt-4 border-zinc-800" />
+
+              <AccordionContentTitle
+                className="font-semibold"
+                title="Third parties"
+              />
+              <AccordionContentParagraph>
+                We do not sell, and have never sold, information that personally
+                identifies who you are to anyone. Although permitted by federal
+                law, we do not disclose your name and address to
+                non-governmental entities, such as charities or businesses, for
+                their own marketing purposes.
+              </AccordionContentParagraph>
+            </AccordionContent>
           </AccordionItem>
         </Accordion>
 
@@ -329,12 +433,12 @@ export default function PrivacyPolicyContent() {
           messages. However, we (along with our service providers) use software
           and hardware tools to help prevent and block "spam" emails, viruses,
           spyware, and other harmful or unwanted communications and programs
-          from being sent and received over Zenglobal.net email and the Zenglobal
-          Services. To help protect you and the Services against these harmful
-          or unwanted communications and programs, these tools may automatically
-          scan your emails, video mails, instant messages, file attachments, and
-          other files and communications. We do not use these tools for
-          marketing or advertising.
+          from being sent and received over Zenglobal.net email and the
+          Zenglobal Services. To help protect you and the Services against these
+          harmful or unwanted communications and programs, these tools may
+          automatically scan your emails, video mails, instant messages, file
+          attachments, and other files and communications. We do not use these
+          tools for marketing or advertising.
         </ParagraphText>
         <ParagraphTitle title="How long we keep your information" />
         <ParagraphText>
@@ -380,14 +484,49 @@ export default function PrivacyPolicyContent() {
   );
 }
 
-type ParagraphTitleProps = {
+type CommonProps = {
+  className?: React.ReactNode;
   title: string;
 };
 
-const ParagraphTitle = ({ title }: ParagraphTitleProps) => {
+type AccordionContentTitle = {
+  className?: React.ReactNode;
+  title: string;
+};
+
+type AccordionContentParagraph = {
+  className?: React.ReactNode;
+  children: React.ReactNode;
+};
+
+const ParagraphTitle = ({ className, title }: CommonProps) => {
   return <h1 className="font-semibold text-2xl py-5">{title}</h1>;
 };
 
-const ParagraphText = ({ children, className }: any) => {
-  return <p className={className}>{children};</p>;
+const ParagraphText = ({ children, className }: AccordionContentParagraph) => {
+  return <p className={cn("", className)}>{children};</p>;
+};
+
+const AccordionContentTitle = ({ className, title }: AccordionContentTitle) => {
+  return (
+    <h3
+      className={cn(
+        "uppercase py-4 font-semibold text-base text-zinc-800",
+        className
+      )}
+    >
+      {title}
+    </h3>
+  );
+};
+
+const AccordionContentParagraph = ({
+  className,
+  children,
+}: AccordionContentParagraph) => {
+  return (
+    <p className={cn("text-zinc-800 font-notoSans font-normal", className)}>
+      {children};
+    </p>
+  );
 };
