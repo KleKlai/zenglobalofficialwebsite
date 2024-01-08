@@ -251,11 +251,44 @@ export default function PrivacyPolicyContent() {
           your identifiable data, we will, but only at your direction and with
           your consent.
         </ParagraphText>
-        <ParagraphText>
+        <ParagraphText className="mt-4">
           We share personal information with others when it's needed to provide
           you with our Services, including credit reporting agencies. We also
           share personal information with others:
         </ParagraphText>
+        <ul className="list-disc ml-7 mt-4 space-y-3 font-normal text-base mb-5">
+          <li>
+            When you direct us to do so, including to authorize other users on
+            your account
+          </li>
+          <li>When required by law or to respond to legal process</li>
+          <li>
+            To protect our property or rights or the safety of our employees,
+            our customers, or other individuals
+          </li>
+        </ul>
+        <TooltipProvider>
+          If we share your personal information with other companies for their
+          own marketing and advertising activities, we will first get your
+          consent. This may be through {" "}
+          <Tooltip>
+            <TooltipTrigger className="underline text-blue-600 cursor-pointer">opt-in or opt-out settings,</TooltipTrigger>
+            <TooltipContent>
+              <p>
+                For example, if we share personal information that does not
+                personally identify you with others for their own use, we will
+                first give you the choice to opt out of such sharing. In other
+                instances, you may want us to share your name, physical address,
+                or email address with another company, such as when you are
+                signing up for a third-party service through one of our
+                platforms, such as the X1, Flex, or Xumo TV platform. In that
+                instance, we will make sure you give us clear direction to do
+                so, before we pass that information on.
+              </p>
+            </TooltipContent>
+          </Tooltip>
+          depending on the type of personal information shared.
+        </TooltipProvider>
       </div>
     </div>
   );
@@ -269,6 +302,6 @@ const ParagraphTitle = ({ title }: ParagraphTitleProps) => {
   return <h1 className="font-semibold text-2xl py-5">{title}</h1>;
 };
 
-const ParagraphText = ({ children }: any) => {
-  return <p className="">{children};</p>;
+const ParagraphText = ({ children, className }: any) => {
+  return <p className={className}>{children};</p>;
 };
