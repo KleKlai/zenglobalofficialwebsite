@@ -7,8 +7,11 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import lowLag from '@/public/images/landing/low-lag.avif'
+import stayConnected from '@/public/images/landing/stay-connected.avif'
+import rewards from '@/public/images/landing/rewards.avif'
 
 export default function WhyZenglobal() {
   return (
@@ -18,22 +21,22 @@ export default function WhyZenglobal() {
         </div>
       <div className="flex flex-wrap lg:space-x-4 p-10 justify-center">
         <CustomCard
-          src="https://images.unsplash.com/photo-1565870100382-f0a510db3cd1?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Person wearing virtual reality goggles"
+          src={lowLag}
+          alt="Persons laughing while playing smartphone"
           title="Experience ultra-low lag with gig-speed WiFi"
           description="Based on median latency of 20 milliseconds or below for Zenglobal gigabit Internet customers with Zenglobal Gateway as measured by Zenglobal Speed Test."
           footer="Gig Internet"
         />
         <CustomCard
-          src="https://images.unsplash.com/photo-1565869812436-a480bda13b6b?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Person wearing virtual reality goggles"
+          src={stayConnected}
+          alt="Two person playing and laughing"
           title="Stay connected with Zenglobal WiFi hotspots"
           description="Zenglobal Internet gives you access to secure WiFi hotspots to keep you connected on the go."
           footer="WiFi 101"
         />
         <CustomCard
-          src="https://images.unsplash.com/photo-1627199219038-e8263f729e3d?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Person wearing virtual reality goggles"
+          src={rewards}
+          alt="Person smiling"
           title="Zenglobal Rewards"
           description="Zenglobal Rewards is our way of saying thanks for being a customer. There's no cost to join, no points to track, and signing up is just a few clicks away."
           footer="Explore Rewards"
@@ -43,7 +46,15 @@ export default function WhyZenglobal() {
   );
 }
 
-const CustomCard = ({ src, alt, title, description, footer }: any) => {
+type CustomCardProps = {
+  src: string | StaticImageData;
+  alt: string;
+  title: string;
+  description: string;
+  footer: string;
+};
+
+const CustomCard = ({ src, alt, title, description, footer }: CustomCardProps) => {
   return (
     <div className="max-w-md rounded overflow-hidden shadow-lg flex flex-col justify-start my-5 sm:mt-10">
       <Image

@@ -1,6 +1,7 @@
 import React from "react";
 import background from "@/public/images/background.jpg";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -36,7 +37,10 @@ export default function Hero() {
               </p>
             </div>
             <div>
-              <Button variant="default" className="text-1xl p-6 bg-white text-zinc-800">
+              <Button
+                variant="default"
+                className="text-1xl p-6 bg-white text-zinc-800"
+              >
                 Get started
               </Button>
             </div>
@@ -47,7 +51,8 @@ export default function Hero() {
                 Subject to Internet Essentials program terms and conditions.
                 Professional installation extra. Advertised price applies to a
                 single outlet. Actual speeds vary and are not guaranteed. <br />
-                For factors affecting speed visit zenglobalics.com/networkmanagement.
+                For factors affecting speed visit
+                zenglobalics.com/networkmanagement.
               </p>
             </div>
           </div>

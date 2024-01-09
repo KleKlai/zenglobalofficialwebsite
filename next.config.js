@@ -6,6 +6,7 @@ const nextConfig = {
         hostname: "images.unsplash.com",
       },
     ],
+    formats: ['image/avif', 'image/webp']
   },
   webpack(config) {
     config.module.rules.push({
