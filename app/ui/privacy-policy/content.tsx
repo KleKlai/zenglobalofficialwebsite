@@ -26,7 +26,7 @@ export default function PrivacyPolicyContent() {
         </p>
       </div>
       <div className="text-justify px-72 py-5 font-notoSans leading-7 text-zinc-800">
-        <h1 className="font-semibold text-2xl py-5">Introduction</h1>
+        <ParagraphTitle title="Introduction" />
         <TooltipProvider>
           <Tooltip>
             <p className="">
@@ -50,12 +50,12 @@ export default function PrivacyPolicyContent() {
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
-        <p className="mt-4">
-          Some of what we say in our Privacy Policy is required by law, and may
-          at times seem long and complicated, but we’ve worked hard to try to
+        <ParagraphText>
+        Some of what we say in our Privacy Policy is required by law, and may
+          at times seem long and complicated, but we&apos;ve worked hard to try to
           make our Privacy Policy easy to understand and provide examples where
           possible.
-        </p>
+        </ParagraphText>
         <ul className="list-disc ml-10 py-5">
           <li>
             How to review and manage your personal information and account
@@ -67,11 +67,9 @@ export default function PrivacyPolicyContent() {
           </li>
           <li>How you can better protect yourself online</li>
         </ul>
-        <h1 className="font-semibold text-2xl py-5">
-          When the Privacy Policy applies
-        </h1>
-        <p className="">
-          This Privacy Policy applies to the information we collect when you use
+        <ParagraphTitle title="When the Privacy Policy applies" />
+        <ParagraphText>
+        This Privacy Policy applies to the information we collect when you use
           or interact with the business entities, products, services, networks,
           and platforms, including our websites, mobile apps, and other services
           and devices where this policy is referenced. These may include
@@ -80,19 +78,17 @@ export default function PrivacyPolicyContent() {
           when you otherwise interact with us. We&apos;ll refer to all of these as
           our &quot;Services&quot; in this Privacy Policy. It also applies to the
           information we collect about you from third parties.
-        </p>
-        <h1 className="font-semibold text-2xl py-5">
-          The personal information we collect and how we collect it
-        </h1>
-        <p className="">
-          To provide you with our Services, we collect your personal
+        </ParagraphText>
+        <ParagraphTitle title="The personal information we collect and how we collect it" />
+        <ParagraphText>
+        To provide you with our Services, we collect your personal
           information. This can include information that does not personally
           identify you - such as device numbers, IP addresses, and account
           numbers. It may also include information that does personally identify
           you, such as your name, address, and telephone number. We call any
           information that identifies you &quot;personally identifiable information&quot;
           or &quot;PII.&quot;
-        </p>
+        </ParagraphText>
         <TooltipProvider>
           <Tooltip>
             <p className="mt-4">
@@ -157,9 +153,7 @@ export default function PrivacyPolicyContent() {
             </AccordionTrigger>
             <AccordionContent className="pl-4">
               <hr />
-              <h3 className="uppercase py-4 font-normal text-base">
-                To provide the services
-              </h3>
+              <AccordionContentTitle title="To provide the services" />
               <ul className="list-disc ml-7 space-y-3 font-normal text-base mb-5">
                 <li>Setting up your account and account management</li>
                 <li>Measure credit and payment risk</li>
@@ -180,17 +174,13 @@ export default function PrivacyPolicyContent() {
                 </li>
               </ul>
               <hr />
-              <h3 className="uppercase py-4 font-normal text-base">
-                To communicate with you
-              </h3>
+              <AccordionContentTitle title="To communicate with you" />
               <ul className="list-disc ml-7 space-y-3 font-normal text-base mb-5">
                 <li>Respond to your questions</li>
                 <li>Personalize communications and your experience</li>
                 <li>Send you service-related announcements and surveys</li>
               </ul>
-              <h3 className="uppercase py-4 font-normal text-base">
-                To understand your use of and make improvements to our services
-              </h3>
+              <AccordionContentTitle title="To understand your use of and make improvements to our services" />
               <ul className="list-disc ml-7 space-y-3 font-normal text-base mb-5">
                 <li>Understand the use of our existing Services</li>
                 <li>Identify and develop new products and services</li>
@@ -198,9 +188,7 @@ export default function PrivacyPolicyContent() {
                   Create measurement and analytics reports for us and others
                 </li>
               </ul>
-              <h3 className="uppercase py-4 font-normal text-base">
-                To provide recommendations and deliver relevant advertising
-              </h3>
+              <AccordionContentTitle title="To provide recommendations and deliver relevant advertising" />
               <ul className="list-disc ml-7 space-y-3 font-normal text-base mb-5">
                 <li>Market the Services</li>
                 <li>
@@ -212,10 +200,8 @@ export default function PrivacyPolicyContent() {
                   platforms
                 </li>
               </ul>
-              <h3 className="uppercase py-4 font-normal text-base">
-                TO INVESTIGATE THEFT OR OTHER ILLEGAL ACTIVITIES, TO ENSURE A
-                SECURE ONLINE ENVIRONMENT, AND TO PROTECT HEALTH AND SAFETY
-              </h3>
+              <AccordionContentTitle title="TO INVESTIGATE THEFT OR OTHER ILLEGAL ACTIVITIES, TO ENSURE A
+                SECURE ONLINE ENVIRONMENT, AND TO PROTECT HEALTH AND SAFETY" />
               <ul className="list-disc ml-7 space-y-3 font-normal text-base mb-5">
                 <li>Detect the unauthorized use, or abuse of the Services</li>
                 <li>
