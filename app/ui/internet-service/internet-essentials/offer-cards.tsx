@@ -7,21 +7,23 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import lowcostcomputer from "@/public/images/offers/lowcostcomputer.avif";
+import partnership from "@/public/images/offers/partnership.avif";
 
 export default function OfferCards() {
   return (
     <div className="flex flex-wrap lg:space-x-4 pb-10 px-6 justify-center">
       <CustomCard
-        src="https://images.unsplash.com/photo-1498814217031-5a856f4a18ac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src={lowcostcomputer}
         alt="Person wearing virtual reality goggles"
         title="Buy a new laptop for Php 8,254"
         description="Once you’re an Internet Essentials or Internet Essentials Plus customer, you’re eligible to purchase a new Dell laptop or Chromebook for just Php 8,254 plus tax. Follow a few simple steps to get started."
         footer="Learn more"
       />
       <CustomCard
-        src="https://images.unsplash.com/photo-1531537571171-a707bf2683da?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src={partnership}
         alt="Person wearing virtual reality goggles"
         title="Our partnership program"
         description="The Internet Essentials Partnership Program (IEPP) is uniquely designed to support the ECF program."
@@ -31,7 +33,15 @@ export default function OfferCards() {
   );
 }
 
-const CustomCard = ({ src, alt, title, description, footer }: any) => {
+type CustomCardProps = {
+  src: string | StaticImageData;
+  alt: string;
+  title: string;
+  description: string;
+  footer: string;
+};
+
+const CustomCard = ({ src, alt, title, description, footer }: CustomCardProps) => {
   return (
     <div className="max-w-md rounded overflow-hidden shadow-lg flex flex-col justify-start my-5 sm:mt-10">
       <Image

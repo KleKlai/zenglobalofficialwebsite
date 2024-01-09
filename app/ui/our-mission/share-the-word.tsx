@@ -7,14 +7,15 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import spreadtheword from '@/public/images/our-mission/spreadtheword.avif'
 
 export default function ShareTheWord() {
   return (
     <div className="flex flex-wrap lg:space-x-4 pb-10 px-6 justify-center">
       <CustomCard
-        src="https://images.unsplash.com/photo-1664575599618-8f6bd76fc670?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src={spreadtheword}
         alt="Person wearing virtual reality goggles"
         title="Spread The Word"
         subTitle="Help spread the word about Internet Essentials:"
@@ -26,7 +27,7 @@ export default function ShareTheWord() {
 }
 
 type CustomCardProps = {
-  src: string;
+  src: string | StaticImageData;
   alt: string;
   title: string;
   subTitle: string;

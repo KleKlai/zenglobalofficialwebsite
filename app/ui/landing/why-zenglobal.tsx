@@ -7,7 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import lowLag from '@/public/images/landing/low-lag.avif'
 import stayConnected from '@/public/images/landing/stay-connected.avif'
@@ -46,7 +46,15 @@ export default function WhyZenglobal() {
   );
 }
 
-const CustomCard = ({ src, alt, title, description, footer }: any) => {
+type CustomCardProps = {
+  src: string | StaticImageData;
+  alt: string;
+  title: string;
+  description: string;
+  footer: string;
+};
+
+const CustomCard = ({ src, alt, title, description, footer }: CustomCardProps) => {
   return (
     <div className="max-w-md rounded overflow-hidden shadow-lg flex flex-col justify-start my-5 sm:mt-10">
       <Image
