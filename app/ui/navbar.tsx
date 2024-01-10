@@ -88,7 +88,7 @@ export default function Navbar() {
           </HoverCard>
 
           <Link
-            href=""
+            href="/signin"
             className="ml-1 me-4 font-helvetica xs:me-6 p-3 text-sm sm:me-6 md:me-6 lg:text-sm xl:text-sm 2xl:text-[15px]"
           >
             <p className="link link-underline link-underline-black text-slate-800 pb-2 tracking-wide">
