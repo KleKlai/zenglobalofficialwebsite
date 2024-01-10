@@ -56,7 +56,7 @@ export default function SignInForm() {
               <FormDescription className="pb-5 text-slate-800">
                 By signing in, you agree to our{" "}
                 <Link href="" className="underline text-tertiary">Terms of Service </Link>and{" "}
-                <Link href="" className="underline text-tertiary">Privacy Policy.</Link>
+                <Link href="/privacy-policy" className="underline text-tertiary">Privacy Policy.</Link>
               </FormDescription>
               <FormMessage />
               <Button className="border-1xl p-6 bg-tertiary text-lg font-semibold font-outfit">Let's go</Button>
