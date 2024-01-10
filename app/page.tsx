@@ -5,12 +5,15 @@ import InternetThatsFitYourBudget from "./ui/landing/internet-thats-fit-your-bud
 import WhyZenglobal from "./ui/landing/why-zenglobal";
 import Navbar from "./ui/navbar";
 
-export default function Home() {
+export default function Main() {
   return (
     <div>
+      <Navbar />
+      <CheckAvailability />
       <ExploreSpeedsPrices />
       <InternetThatsFitYourBudget />
       <WhyZenglobal />
+      <Footer />
     </div>
   );
 }

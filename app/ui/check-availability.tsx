@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function CheckAvailability() {
@@ -8,7 +9,9 @@ export default function CheckAvailability() {
       </p>
       <div className="flex flex-col justify-center w-full max-w-3xl border-black px-5">
         <div className="flex flex-col w-full">
-          <span className="text-xs text-slate-700 mb-2">Street address and apartment</span>
+          <span className="text-xs text-slate-700 mb-2">
+            Street address and apartment
+          </span>
           <div className="flex flex-col sm:flex-row w-full">
             <input
               type="text"
@@ -23,9 +26,9 @@ export default function CheckAvailability() {
         <div className="">
           <p className="text-xs mt-8 text-center xs:my-10">
             Already a customer?{" "}
-            <a href="#" className="text-blue-500 underline">
+            <Link href="/signin" className="text-blue-500 underline">
               Sign in here
-            </a>
+            </Link>
           </p>
         </div>
       </div>
