@@ -59,7 +59,7 @@ export default function SignInForm() {
                 <Link href="/privacy-policy" className="underline text-tertiary">Privacy Policy.</Link>
               </FormDescription>
               <FormMessage />
-              <Button className="border-1xl p-6 bg-tertiary text-lg font-semibold font-outfit">Let's go</Button>
+              <Button className="border-1xl p-6 bg-tertiary text-lg font-semibold font-outfit">Let&apos;s go</Button>
             </FormItem>
           )}
         ></FormField>

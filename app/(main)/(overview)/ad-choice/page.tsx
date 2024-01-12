@@ -12,7 +12,7 @@ export default function AdChoice() {
       <ParagraphTitle title="Internet-Based Advertising" />
       <ParagraphText>
         Our sites enable cookies and other technologies that comply with the
-        DAA's AdChoices program (see our Cookie Notice). For more information or
+        DAA&apos;s AdChoices program (see our Cookie Notice). For more information or
         to opt out of receiving targeted advertising from participating
         third-party advertisers, click on the Ad Choices icon below. After you
         opt out, you will still see advertisements, but they may not be as
@@ -22,7 +22,7 @@ export default function AdChoice() {
         Other video content partners may present customized ads based on
         information they collect through their own pixels, cookies, and other
         technologies. These ads may appear in videos you watch in a content
-        provider's video player or elsewhere on Xfinity websites, applications,
+        provider&apos;s video player or elsewhere on Zenglobal websites, applications,
         or platforms. These companies collect and use information under their
         own privacy policies. More information about these companies, their
         privacy policies, and the opt-outs they offer can be found here:
@@ -30,7 +30,7 @@ export default function AdChoice() {
       <ParagraphText>
         <span className="font-medium text-base">Mobile Settings: </span> You may
         manage the collection of information for personalized advertising
-        purposes in mobile apps via the device's settings, including managing
+        purposes in mobile apps via the device&apos;s settings, including managing
         the collection of location data.
       </ParagraphText>
       <ParagraphText className="mt-4 mb-20">
