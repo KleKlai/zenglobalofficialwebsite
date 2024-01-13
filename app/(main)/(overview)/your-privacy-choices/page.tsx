@@ -12,7 +12,7 @@ export default function YourPrivacyChoices() {
           We do not sell information that identifies who you are to anyone,
           including sensitive personal information like race, ethnicity,
           political affiliation, or philosophical beliefs. Sensitive personal
-          information collected, used, or stored by Comcast is used to support
+          information collected, used, or stored by Oro Dragon is used to support
           activities like personalized recommendations, marketing and
           advertising, and security and fraud monitoring. Customers may choose
           to limit use of this information for marketing, advertising, and new
