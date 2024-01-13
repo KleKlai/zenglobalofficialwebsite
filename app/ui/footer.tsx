@@ -22,11 +22,11 @@ const links = [
     href: "/terms",
     icon: NewspaperIcon,
   },
-  {
-    name: "Notice of Collection",
-    href: "",
-    icon: DocumentMagnifyingGlassIcon,
-  },
+  // {
+  //   name: "Notice of Collection",
+  //   href: "",
+  //   icon: DocumentMagnifyingGlassIcon,
+  // },
   {
     name: "Privacy Policy",
     href: "/privacy-policy",
