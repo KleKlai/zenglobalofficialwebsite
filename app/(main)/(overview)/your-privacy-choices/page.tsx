@@ -57,7 +57,7 @@ export default function YourPrivacyChoices() {
         </PrivacyCard>
       </div>
       <div className="flex items-center justify-center">
-        <h2 className="text-2xl font-medium font-notoSans py-6 text-blue-700">
+        <h2 className="text-2xl font-semibold font-notoSans pb-14 text-blue-700">
           Simple things you can do to protect your information
         </h2>
       </div>
