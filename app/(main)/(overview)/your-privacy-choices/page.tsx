@@ -57,7 +57,7 @@ export default function YourPrivacyChoices() {
         </PrivacyCard>
       </div>
       <div className="flex items-center justify-center">
-        <h2 className="text-2xl font-semibold font-notoSans pb-14 text-blue-700">
+        <h2 className="text-3xl font-semibold font-outfit pb-14 text-tertiary tracking-wider">
           Simple things you can do to protect your information
         </h2>
       </div>
@@ -73,8 +73,8 @@ export default function YourPrivacyChoices() {
             </p>
           </CardContent>
           <CardFooter className="flex justify-center">
-            <Link href="" className="border-2 border-gray-400 rounded-md">
-              <p className="py-2 px-7">Update password</p>
+            <Link href="" className="border-2 border-zinc-800 hover:bg-zinc-800 hover:text-white rounded-md">
+              <p className="py-2 px-7 font-medium">Update password</p>
             </Link>
           </CardFooter>
         </Card>
@@ -89,8 +89,8 @@ export default function YourPrivacyChoices() {
             </p>
           </CardContent>
           <CardFooter className="flex justify-center">
-            <Link href="" className="border-2 border-gray-400 rounded-md">
-              <p className="py-2 px-7">Enable now</p>
+            <Link href="" className="border-2 border-zinc-800 hover:bg-zinc-800 hover:text-white rounded-md">
+              <p className="py-2 px-7 font-medium">Enable now</p>
             </Link>
           </CardFooter>
         </Card>

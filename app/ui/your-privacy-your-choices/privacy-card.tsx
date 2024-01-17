@@ -19,7 +19,7 @@ export default function PrivacyCard({title, children, hrefTitle, href}: PrivacyC
   return (
     <Card className="max-w-md">
       <CardHeader>
-        <CardTitle>{title}</CardTitle>
+        <CardTitle className="font-semibold font-outfit tracking-wide text-zinc-800">{title}</CardTitle>
       </CardHeader>
       <CardContent>
         <p className="text-justify font-normal font-notoSans">
