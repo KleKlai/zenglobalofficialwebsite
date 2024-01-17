@@ -7,8 +7,7 @@ export default function YourPrivacyChoices() {
   return (
     <div>
       <Hero />
-      {/* lg:flex-row px-72 py-20 space-x-5 */}
-      <div className="flex flex-wrap space-y-5 m-4">
+      <div className="flex flex-wrap m-4 space-y-5 lg:flex-row lg:px-62 lg:py-10 lg:justify-center lg:space-x-5 lg:space-y-0">
         <PrivacyCard
           title="Sensitive personal information preferences"
           href="#"
@@ -48,8 +47,8 @@ export default function YourPrivacyChoices() {
           or correct their personal information, but all Zenglobal customers can
           make a request.
         </PrivacyCard>
-        <Tips />
       </div>
+      <Tips />
     </div>
   );
 }

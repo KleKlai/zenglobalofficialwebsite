@@ -14,11 +14,11 @@ export default function Tips() {
   return (
     <div>
       <div className="flex items-center justify-center">
-        <h2 className="text-3xl font-semibold font-outfit pb-14 text-tertiary tracking-wider text-center">
+        <h2 className="text-3xl font-semibold font-outfit pb-14 px-10 text-tertiary tracking-wider text-center">
           Simple things you can do to protect your information
         </h2>
       </div>
-      <div className="flex flex-wrap space-y-5 lg:space-x-10 pb-10 px-6 justify-center">
+      <div className="flex flex-wrap space-y-5 lg:space-y-0 lg:space-x-10 pb-10 px-6 justify-center">
         <Card className="flex flex-col items-center max-w-lg py-10 px-8">
           <CardHeader>
             <CardTitle className="text-center">
