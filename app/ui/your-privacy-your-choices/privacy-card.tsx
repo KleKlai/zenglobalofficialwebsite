@@ -17,7 +17,7 @@ type PrivacyCardProps = {
 }
 export default function PrivacyCard({title, children, hrefTitle, href}: PrivacyCardProps) {
   return (
-    <Card className="max-w-md">
+    <Card className="lg:max-w-md">
       <CardHeader>
         <CardTitle className="font-semibold font-outfit tracking-wide text-zinc-800">{title}</CardTitle>
       </CardHeader>
