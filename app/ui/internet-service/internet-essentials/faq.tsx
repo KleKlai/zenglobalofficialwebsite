@@ -13,7 +13,7 @@ export default function FAQ() {
       <h1 className="text-3xl font-outfit font-semibold text-zinc-800 text-center">
         Questions? Here are the answers.
       </h1>
-      <div className="text-base font-outfit bg-gray-100 w-2/4 px-20 mt-14 mb-14 text-zinc-800">
+      <div className="text-base font-outfit bg-gray-100 m-4 px-20 mt-14 mb-14 text-zinc-800 lg:w-2/4">
         <Accordion type="single" className="py-10" collapsible>
           <AccordionItem value="item-1">
             <AccordionTrigger className="font-semibold">

@@ -63,7 +63,7 @@ const CustomCard = ({
       <div className="px-6 pt-6 pb-10 flex items-center justify-center">
         <Link
           href={href}
-          className="inline-block border-2 rounded-lg p-4 font-medium xs:ml-0 md:ml-2 lg:ml-2 bg-zinc-800 text-white"
+          className="inline-block border-2 rounded-lg p-4 font-medium xs:ml-0 md:ml-2 lg:ml-2 bg-zinc-800 text-white  hover:border-zinc-800 hover:border-2"
         >
           {linkTitle}
         </Link>
