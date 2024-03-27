@@ -17,18 +17,18 @@ const links = [
     name: "Internet",
     href: "/internet-service",
   },
-  {
-    name: "Low-Cost Computer",
-    href: "/low-cost-computer",
-  },
-  {
-    name: "Home Security",
-    href: "/home-security",
-  },
-  {
-    name: "Learning Center",
-    href: "/learning-center",
-  },
+  // {
+  //   name: "Low-Cost Computer",
+  //   href: "/low-cost-computer",
+  // },
+  // {
+  //   name: "Home Security",
+  //   href: "/home-security",
+  // },
+  // {
+  //   name: "Learning Center",
+  //   href: "/learning-center",
+  // },
   {
     name: "Our Mission",
     href: "/our-mission",
