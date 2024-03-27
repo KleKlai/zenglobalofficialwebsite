@@ -207,7 +207,7 @@ export default function Footer() {
         </div>
 
         <p className="mt-4 text-gray-300 font-roboto font-regular text-center block lg:hidden">
-          &copy; 2023 Zenglobal
+          &copy; 2024 Zenglobal
         </p>
 
         <ul className="flex flex-wrap items-center justify-center text-gray-900 dark:text-white py-6 space-x-6">

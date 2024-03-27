@@ -34,12 +34,16 @@ const links = [
     href: "/our-mission",
   },
 ];
+
+import logo from '@/public/images/logos/logo-black-256x256.png'
+import Image from "next/image";
 export default function Navbar() {
   return (
     <div className="mx-auto from-blue-gray-900 to-blue-gray-800 px-4 py-3">
       <div className="flex flex-wrap items-center justify-center">
-        <div>
-          <p>Logo</p>
+        <div className="mr-10 flex flex-wrap items-center justify-center">
+          <Image src={logo} width={50} height={150} alt="Zenglobal"/>
+          <p className="text-slate-800 tracking-wide pb-2 pl-2">Zenglobal</p>
         </div>
         <div>
           <ul className="flex flex-wrap space-x-3">
